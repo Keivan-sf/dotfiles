@@ -1,11 +1,23 @@
+require("github-theme").setup({
+    options = {
+        transparent = true,
+    }
+})
+
 function ColorizeVim(color)
-	color = color or "rose-pine"
+	color = color or "github_dark_tritanopia"
 	vim.cmd.colorscheme(color)
-	--vim.api.nvim_set_hl(0 , "Nomral" , {bg = "none"})
-	--vim.api.nvim_set_hl(0 , "NomralFloat" , {bg = "none"})
+    vim.cmd("highlight Normal guibg=none")
+    vim.cmd("highlight NonText guibg=none")
+    vim.cmd("highlight Normal ctermbg=none")
+    vim.cmd("highlight NonText ctermbg=none")
+	-- vim.api.nvim_set_hl(0 , "Nomral" , {bg = "none"})
+	-- vim.api.nvim_set_hl(1 , "NomralFloat" , {bg = "none"})
 end
 
 
 -- ColorizeVim("github_dark")
 -- ColorizeVim("github_dark_dimmed")
-ColorizeVim("github_dark_tritanopia")
+-- ColorizeVim("rose-pine")
+ColorizeVim()
+
