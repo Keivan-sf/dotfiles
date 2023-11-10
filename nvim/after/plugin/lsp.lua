@@ -5,6 +5,9 @@ lsp.preset("recommended")
 lsp.ensure_installed({
 	"tsserver",
 	"rust_analyzer",
+	"clangd",
+	"html",
+	"cssls",
 })
 
 -- Fix Undefined global 'vim'
@@ -76,3 +79,4 @@ lsp.setup()
 vim.diagnostic.config({
 	virtual_text = false,
 })
+

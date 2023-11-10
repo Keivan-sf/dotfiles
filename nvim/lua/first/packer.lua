@@ -53,5 +53,8 @@ return require("packer").startup(function(use)
 			vim.fn["mkdp#util#install"]()
 		end,
 	})
+
+	use("wakatime/vim-wakatime")
+
 end)
 
