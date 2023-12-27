@@ -56,5 +56,26 @@ return require("packer").startup(function(use)
 
 	use("wakatime/vim-wakatime")
 
-end)
+	use({ "nyoom-engineering/oxocarbon.nvim" })
 
+	use({ "catppuccin/nvim", as = "catppuccin" })
+
+	use("nvim-tree/nvim-tree.lua")
+	use("nvim-tree/nvim-web-devicons")
+	use("lewis6991/gitsigns.nvim")
+	use({ "kevinhwang91/nvim-bqf", ft = "qf" })
+	use("APZelos/blamer.nvim")
+
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "nvim-tree/nvim-web-devicons", opt = true },
+	})
+
+	use({
+		"rebelot/heirline.nvim",
+		-- You can optionally lazy-load heirline on UiEnter
+		-- to make sure all required plugins and colorschemes are loaded before setup
+		-- event = "UiEnter",
+	})
+	--	use("romgrk/barbar.nvim")
+end)

@@ -1,6 +1,6 @@
 require("github-theme").setup({
 	options = {
-		-- transparent = false,
+		transparent = false,
 	},
 })
 
@@ -15,11 +15,14 @@ function ColorizeVim(color)
 	-- vim.cmd("highlight NonText ctermbg=none")
 
 	-- the following did not work
-	-- vim.api.nvim_set_hl(0 , "Nomral" , {bg = "none"})
-	-- vim.api.nvim_set_hl(1 , "NomralFloat" , {bg = "none"})
+	-- vim.api.nvim_set_hl(0, "Nomral", { bg = "none" })
+	-- vim.api.nvim_set_hl(0, "NomralFloat", { bg = "none" })
 end
 
+-- ColorizeVim("github_dark_tritanopia")
+vim.opt.background = "dark"
 -- ColorizeVim("github_dark")
 -- ColorizeVim("github_dark_dimmed")
 -- ColorizeVim("rose-pine")
-ColorizeVim()
+-- ColorizeVim("oxocarbon")
+ColorizeVim("catppuccin-mocha")

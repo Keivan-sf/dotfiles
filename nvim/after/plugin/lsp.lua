@@ -8,6 +8,7 @@ lsp.ensure_installed({
 	"clangd",
 	"html",
 	"cssls",
+	"pylsp",
 })
 
 -- Fix Undefined global 'vim'
@@ -79,4 +80,3 @@ lsp.setup()
 vim.diagnostic.config({
 	virtual_text = false,
 })
-

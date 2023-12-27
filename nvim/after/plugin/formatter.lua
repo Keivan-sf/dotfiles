@@ -39,6 +39,9 @@ require("formatter").setup({
 		rust = {
 			require("formatter.filetypes.rust").rustfmt,
 		},
+		python = {
+			require("formatter.filetypes.python").black,
+		},
 		cpp = {
 			require("formatter.filetypes.cpp").astyle,
 			function()
@@ -65,4 +68,3 @@ require("formatter").setup({
 })
 
 vim.keymap.set("n", "<leader>f", vim.cmd.Format)
-
